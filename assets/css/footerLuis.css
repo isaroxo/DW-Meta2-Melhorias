@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 250px;
+}
+
+.copyright {
+    align-self: flex-end;
+    margin: 0;
+}
+
+.rede-social a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+    transition: all .5s ease;
+}
+
+.rede-social:first-child a:hover {
+    color: #E111A7;
+}
+
+.rede-social:nth-child(2) a:hover {
+    color: #00FFFF;
+}
+
+.rede-social:last-child a:hover {
+    color: #B4FF00;
+}
+
+.rede-social p {
+    align-self: center;
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.rede-social i {
+    align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column-reverse;
+    }
+
+    .copyright {
+        align-self: center;
+        margin-top: 30px;
+    }
+
+    .rede-social a {
+        justify-content: center;
+    }
+
+    .rede-social:first-child a:hover, .rede-social:nth-child(2) a:hover, .rede-social:last-child a:hover {
+        color: white;
+    }
+
+    .rede-social:first-child a:active {
+        color: #E111A7;
+    }
+
+    .rede-social:nth-child(2) a:active {
+        color: #00FFFF;
+    }
+
+    .rede-social:last-child a:active {
+        color: #B4FF00;
+    }
+
+}

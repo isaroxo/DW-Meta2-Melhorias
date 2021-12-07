@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.containercontactos {
+    margin: 0 4vw;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 15pt;
+    line-height: 140%;
+}
+
+.titulocontactos {
+    font-weight: normal;
+    font-size: 65pt;
+}
+
+.titulostudio {
+    font-weight: normal;
+    font-size: 40pt;
+    padding-bottom: 3vw;
+}
+
+.rowcontactos {
+    padding-bottom: 200px;
+}
+
+.textostudio {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2vw;
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    box-shadow: 0 0 30px #00FFFF;
+    padding: 100px 7vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulocontactosstudio {
+    font-size: 22pt;
+    font-weight: 500;
+}
+
+.textocontactosstudio {
+    font-size: 22pt;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: #00FFFF;
+}
+a:focus{
+    text-decoration: none;
+    color: #00FFFF;
+}
+
+
+.telefone {
+    margin-top: -30px;
+}
+
+.infopessoalisa, .infopessoaliris{
+    display: block;
+    width: 28%;
+    margin-left: 1.45%;
+    margin-right: 5%;
+    margin-top: 2vw;
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    text-align: center;
+    padding: 8vh 4vw;
+    cursor: pointer;
+}
+.infopessoalluis{
+    width: 28%;
+    margin-left: 1.45%;
+    margin-top: 2vw;
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    text-align: center;
+    padding: 8vh 4vw;
+    cursor: pointer;
+}
+.infopessoaliriscontactos, .infopessoalisacontactos{
+    display: none;
+    width: 28%;
+    margin-left: 1.45%;
+    margin-right: 5%;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    box-shadow: 0 0 30px #00FFFF;
+    text-align: center;
+    padding: 10vh 4vw;
+    cursor: pointer;
+}
+.infopessoalluiscontactos{
+    display: none;
+    width: 28%;
+    margin-left: 1.45%;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    box-shadow: 0 0 30px #00FFFF;
+    text-align: center;
+    padding: 10vh 4vw;
+    cursor: pointer;
+}
+
+.infopessoalisa>h3, .infopessoaliris>h3,.infopessoalluis>h3,.infopessoaliriscontactos>h3, .infopessoalisacontactos>h3, .infopessoalluiscontactos>h3{
+    font-size: 22pt;
+    font-weight: 500;
+}
+.infopessoaliriscontactos>h3, .infopessoalisacontactos>h3, .infopessoalluiscontactos>h3{
+    margin-bottom: 45px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.infopessoal{
+    padding-top: 60px;
+    padding-bottom: 170px;
+}
+
+.containerfalaconnoscofundo{
+    background-color: black;
+    box-shadow: 0 -10px 20px #00FFFF;
+}
+
+.containerfalaconnosco {
+    margin-top: 100px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    overflow-x: hidden;
+}
+.titulofalaconnosco{
+    font-weight: normal;
+    font-size: 40pt;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    color: white;
+}
+.nome, .email, .mensagem{
+    color: white;
+    font-size: 22pt;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+#inputnome, #inputemail{
+    background-color: black;
+    border: 2px solid white;
+    width: 70%;
+    height: 10vw;
+    color: white;
+    padding: 1vw;
+    font-size: 15pt;
+}
+#inputmensagem{
+    background-color: black;
+    border: 2px solid white;
+    width: 100%;
+    height: 32vw;
+    color: white;
+    padding: 0.5vw;
+    font-size: 15pt;
+}
+.rowinputemail{
+    top: 10%;
+    transform: translateY(-102%);
+}
+.rowsubmit .col-lg-12{
+    margin-top: -140px;
+}
+.submit{
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    box-shadow: 0 0 20px #00FFFF;
+    padding: 1vw 6.2vw;
+    font-size: 22pt;
+    font-weight: 500;
+}
+.rowinfopessoaltele{
+    display: none;
+}
+@media screen and (max-width: 1474px) {
+    .infopessoalisa, .infopessoaliris{
+        padding: 8vh 1.9vw;
+    }
+    .infopessoalluis{
+        padding: 8vh 1.9vw;
+    }
+    .infopessoaliriscontactos, .infopessoalisacontactos{
+        padding: 10vh 1.9vw;
+    }
+    .infopessoalluiscontactos{
+        padding: 10vh 1.9vw;
+    }
+}
+@media screen and (max-width: 1199.5px) {
+    .rowinfopessoal{
+        display: none;
+    }
+    .rowinfopessoaltele{
+        display: block;
+    }
+
+    .emailstudio {
+        margin-top: 30px;
+    }
+
+    .telefone {
+        margin-top: 30px;
+    }
+    .redessociais {
+        margin-top: 30px;
+    }
+    .infopessoalisa, .infopessoaliris{
+        display: none;
+    }
+    .infopessoalluis{
+        display: none;
+    }
+    .infopessoaliriscontactos, .infopessoalisacontactos{
+        display: block;
+        width: 97%;
+        padding: 50px 4vw;
+    }
+    .infopessoalisacontactos{
+        margin-top: 70px;
+    }
+    .infopessoalluiscontactos{
+        margin-top: 70px;
+        display: block;
+        width: 97%;
+        padding: 50px 4vw;
+    }
+    #inputnome, #inputemail{
+        width: 100%;
+    }
+    #inputmensagem{
+        width: 100%;
+    }
+
+    .rowsubmit .col-lg-12 {
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+    .rowinputemail{
+        top: 0;
+        transform: translateY(-190%);
+    }
+    .rowinputmensagem{
+        top: -23%;
+        transform: translateY(73%);
+    }
+
+}
+@media screen and (max-width: 1010px) {
+    .rowinputemail {
+        top: 0;
+        transform: translateY(-180%);
+    }
+    .rowinputmensagem{
+        top: -23%;
+        transform: translateY(77%);
+    }
+}
+@media screen and (max-width: 900px) {
+    .rowsubmit .col-lg-12 {
+        margin-top: 160px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width: 767.5px) {
+
+    p{
+        font-size: 9pt;
+    }
+    .titulocontactos {
+        font-size: 27pt;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .titulostudio {
+        font-size: 18pt;
+    }
+    .nome, .email, .mensagem {
+        font-size: 12pt;
+        padding-bottom: 25px
+    }
+    .submit {
+        font-size: 12pt;
+    }
+    #inputnome, #inputemail{
+        font-size: 9pt;
+    }
+    #inputmensagem{
+        font-size: 9pt;
+    }
+    .infopessoalisa>h3, .infopessoaliris>h3,.infopessoalluis>h3,.infopessoaliriscontactos>h3, .infopessoalisacontactos>h3, .infopessoalluiscontactos>h3{
+        font-size: 12pt;
+    }
+    .titulocontactosstudio {
+        font-size: 12pt;
+    }
+
+    .textocontactosstudio {
+        font-size: 12pt;
+    }
+
+    .rowcontactos {
+        padding-bottom: 30px;
+    }
+    .textostudio {
+        box-shadow: 0 0 18px #00ffff;
+        padding: 50px 7vw;
+        flex-direction: column;
+    }
+    .infopessoal {
+        padding-bottom: 130px;
+    }
+    .infopessoaliriscontactos, .infopessoalisacontactos{
+        padding: 50px 4vw;
+    }
+    .infopessoalluiscontactos{
+        padding: 40px 4vw;
+    }
+    .infopessoaliriscontactos>h3, .infopessoalisacontactos>h3, .infopessoalluiscontactos>h3 {
+        margin-bottom: 30px;
+    }
+    .containerfalaconnosco {
+        margin-top: 70px;
+    }
+    .rowinputnome {
+        margin-top: 0;
+    }
+    .rowinputemail {
+        top: 0;
+        transform: translateY(-190%);
+    }
+    .titulofalaconnosco {
+        font-size: 27pt;
+        padding-top: 35px;
+        padding-bottom: 45px;
+    }
+
+    .rowsubmit .col-lg-12 {
+        margin-top: 135px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .rowsubmit .col-lg-12 {
+        margin-top: 115px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .rowinputemail {
+        top: 0;
+        transform: translateY(-180%);
+    }
+
+    .rowsubmit .col-lg-12 {
+        margin-top: 95px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .rowinputemail {
+        top: 0;
+        transform: translateY(-170%);
+    }
+
+    .rowsubmit .col-lg-12 {
+        margin-top: 85px;
+    }
+}
+

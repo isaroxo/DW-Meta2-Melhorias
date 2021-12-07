@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.containersobre {
+    margin: 0 4vw;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 15pt;
+    line-height: 140%;
+}
+
+.titulosobre {
+    font-weight: normal;
+    font-size: 65pt;
+    margin-top: -1vw;
+}
+
+.titulonomes {
+    font-weight: normal;
+    font-size: 40pt;
+    padding-bottom: 3vw;
+}
+
+.rowsobre {
+    padding-bottom: 450px;
+}
+
+.textosobreanimacao {
+    position: relative;
+    left: -5000px;
+    transition-property: position, left;
+    transition-duration: 2s, 2s;
+    transition-delay: 1s, 1s;
+}
+
+.textosobreanimacaoiris {
+    position: relative;
+    right: -5000px;
+    transition-property: position, right;
+    transition-duration: 2s, 2s;
+    transition-delay: 1s, 1s;
+}
+
+.textosobreanimacaoisa {
+    position: relative;
+    left: -5000px;
+    transition-property: position, left;
+    transition-duration: 2s, 2s;
+
+}
+
+.textosobreanimacaoluis {
+    position: relative;
+    right: -5000px;
+    transition-property: position, right;
+    transition-duration: 2s, 2s;
+}
+
+.tituloiris {
+    text-align: right;
+}
+
+.rowtextoiris {
+    padding-bottom: 650px;
+}
+
+.rowtextoiris > .col-lg-7 {
+    margin-left: 7.5vw;
+}
+
+.rowtextoiris > .col-lg-7 > p {
+    padding-left: 5vw;
+    padding-top: 100px;
+    text-align: right;
+    float: right;
+}
+
+.rowtextoisa {
+    padding-bottom: 650px;
+}
+
+.rowtextoisa > .col-lg-7 > p {
+    padding-right: 5vw;
+    padding-top: 110px;
+}
+
+.tituloluis {
+    text-align: right;
+}
+
+.rowtextoluis > .col-lg-7 {
+    margin-left: 7.5vw;
+}
+
+.rowtextoluis > .col-lg-7 > p {
+    text-align: right;
+    padding-left: 5vw;
+    padding-top: 110px;
+}
+
+
+#imagemiris {
+    width: 300px;
+    height: auto;
+    float: right;
+    margin-left: 5vw;
+}
+
+#imagemisa {
+    width: 300px;
+    height: auto;
+}
+
+#imagemluis {
+    width: 300px;
+    height: auto;
+    float: right;
+}
+
+@media screen and (max-width: 1199.5px) {
+
+    .titulosobre {
+        margin-bottom: 30px;
+    }
+
+    .rowsobre {
+        padding-bottom: 150px;
+    }
+
+    .textosobreanimacao {
+        padding-top: 10px;
+    }
+    .rowtextoiris{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .rowtextoiris > .col-lg-7 > p {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+
+    .rownomeisa {
+        padding-top: 150px;
+    }
+
+    .rowtextoisa > .col-lg-7 > p {
+
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    .rowtextoisa > .col-lg-7 {
+        order: -1;
+    }
+
+    .rowtextoisa {
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rownomeluis {
+        padding-top: 150px;
+    }
+
+    .rowtextoluis > .col-lg-7 > p {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 851px) {
+    .rowtextoiris > .col-lg-7 > p {
+        padding-left: 0;
+    }
+    .rowtextoisa > .col-lg-7 > p {
+        padding-right: 0;
+    }
+    .rowtextoluis > .col-lg-7 > p {
+        padding-left: 0;
+    }
+    .rowtextoiris > .col-lg-7 {
+        margin-left: 0;
+    }
+    .rowtextoisa > .col-lg-7 {
+        margin-left: 0;
+    }
+    .rowtextoluis > .col-lg-7 {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    p{
+        font-size: 9pt;
+    }
+    .titulosobre {
+        font-size: 27pt;
+        margin-bottom: 0;
+    }
+
+    .titulonomes {
+        font-size: 18pt;
+        padding-bottom: 0;
+    }
+    .rowsobre {
+        padding-bottom: 50px;
+    }
+    .rownomeisa {
+        padding-top: 25px;
+    }
+    .rownomeluis {
+        padding-top: 25px;
+    }
+    .rowtextoiris > .col-lg-7 > p {
+        padding-bottom: 10px;
+    }
+    .rowtextoisa > .col-lg-7 > p {
+        padding-bottom: 10px;
+    }
+    .rowtextoluis > .col-lg-7 > p {
+        padding-bottom: 10px;
+    }
+    #imagemiris {
+        width: 150px;
+    }
+
+    #imagemisa {
+        width: 150px;
+    }
+
+    #imagemluis {
+        width: 150px;
+    }
+}

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+header {
+    margin: 50px 4.5vw 100px 4.5vw;
+}
+
+nav {
+    /*background-color: darkgrey;*/
+
+    align-items: center;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    font-weight: normal;
+    justify-content: space-between;
+    padding: 0 0 0 0;
+}
+
+#titulo {
+    font-weight: 500;
+    font-size: 21pt;
+}
+
+.menu-flex-item:first-of-type {
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 21pt;
+    height: 100%;
+    margin: 0;
+    width: 30%;
+}
+
+.menu-flex-item:first-of-type p {
+    margin: 0;
+}
+
+.menu-flex-item:nth-of-type(2) {
+    font-size: 21pt;
+    width: 70%;
+}
+
+.menu-navegacao {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu-navegacao-subtitulo {
+    cursor: pointer;
+    margin-right: 50px;
+    font-size: 21pt;
+}
+
+.menu-navegacao-subtitulo:last-child {
+    margin-right: 0;
+}
+
+.menu-navegacao-subtitulo a {
+    color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+    transition: all .25s;
+}
+
+.menu-navegacao-subtitulo:first-child a:hover {
+    color: #E111A7;
+}
+
+.menu-navegacao-subtitulo:nth-child(2) a:hover {
+    color: #00FFFF;
+}
+
+.menu-navegacao-subtitulo:last-child a:hover {
+    color: #B4FF00;
+}
+
+#mobile-header {
+    display: none;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        margin: 0;
+    }
+    #div_mobile{
+        margin: 25px 4.5vw 25px 4.5vw;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    nav {
+        display: none;
+    }
+
+    #mobile-header {
+        display: block;
+    }
+
+    #mobile-nav {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    #titulo {
+        font-size: 15pt;
+    }
+    .mobile-menu-flex-item:first-of-type {
+        align-self: baseline;
+        z-index: 25;
+    }
+
+  /*  .mobile-menu-flex-item:first-of-type > p {
+        font-size: 5.4rem;
+        top: -10%;
+        transform: translateY(-45%);
+    }*/
+
+    .mobile-menu-flex-item:last-of-type {
+        align-self: baseline;
+        cursor: pointer;
+        z-index: 25;
+        width: 15px;
+        height: auto;
+    }
+
+    .mobile-nav-flex-container {
+        background-color: white;
+        height: 100vh;
+        left: 0;
+        margin-top: 0;
+        padding: 50px 15px 0 15px;
+        position: absolute;
+        top: -100vh;
+        transition: top 1.5s;
+        width: 100%;
+        z-index: 20;
+    }
+
+    .slide {
+        top: 0;
+        padding-left: 40px;
+    }
+
+    .mobile-menu-navegacao {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        list-style: none;
+        padding: 2px;
+        margin-top: 20px;
+    }
+
+    .mobile-menu-navegacao-subtitulo {
+        font-size: 27pt;
+        padding-bottom: 60px;
+    }
+
+    .mobile-menu-navegacao-subtitulo:first-child a:active {
+        color: #E111A7;
+        text-decoration: none;
+    }
+
+    .mobile-menu-navegacao-subtitulo:nth-child(2) a:active {
+        color: #00FFFF;
+        text-decoration: none;
+    }
+
+    .mobile-menu-navegacao-subtitulo:last-child a:active {
+        color: #B4FF00;
+        text-decoration: none;
+    }
+
+/*    .mobile-menu-navegacao-subtitulo:first-child a:hover {
+        color: #E111A7;
+        text-decoration: none;
+    }
+
+    .mobile-menu-navegacao-subtitulo:nth-child(2) a:hover {
+        color: #00FFFF;
+        text-decoration: none;
+    }
+
+    .mobile-menu-navegacao-subtitulo:last-child a:hover {
+        color: #B4FF00;
+        text-decoration: none;
+    }*/
+
+    .mobile-menu-navegacao-subtitulo a {
+        color: black;
+    }
+
+}
+

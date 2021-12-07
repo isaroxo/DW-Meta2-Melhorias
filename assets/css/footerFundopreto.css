@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 150px 4.5vw 50px 4.5vw;
+
+}
+
+.copyright {
+    align-self: flex-end;
+    margin: 0;
+    font-size: 21pt;
+}
+
+.rede-social a{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.rede-social:first-child a:hover {
+    color: #E111A7;
+}
+
+.rede-social:nth-child(2) a:hover {
+    color: #00FFFF;
+}
+
+.rede-social:last-child a:hover {
+    color: #B4FF00;
+}
+.rede-social p {
+    font-size: 21pt;
+    align-self: center;
+    display: inline-block;
+    margin: 3px 21px 0 0;
+}
+
+.rede-social i {
+    align-self: center;
+    font-size: 21pt;
+    margin-right: 7px;
+}
+
+@media screen and (max-width: 768px){
+    footer {
+        padding: 100px 4.5vw 25px 4.5vw;
+    }
+    .copyright {
+        font-size: 13pt;
+    }
+    .rede-social a{
+        float: right;
+        justify-content: right;
+    }
+    .rede-social p {
+        font-size: 13pt;
+    }
+
+    .rede-social i {
+        font-size: 13pt;
+    }
+}
